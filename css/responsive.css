@@ -1,0 +1,28 @@
+@media (max-width: 900px) {
+  .btn-menu { display: block; }
+  .menu { position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--fondo); border-bottom: 1px solid var(--linea); max-height: 0; overflow: hidden; transition: max-height .3s; }
+  .menu.abierto { max-height: 420px; }
+  .menu a { padding: .9rem 5vw; border: 0; }
+  .pilares { grid-template-columns: 1fr; gap: 1.2rem; }
+}
+@media (max-width: 600px) {
+  .grilla { grid-template-columns: repeat(2, 1fr); gap: .8rem; }
+  .tarjeta { padding: .7rem; }
+  .tarjeta-nombre { font-size: .9rem; }
+  .marca span { display: none; }
+  .hero-botones .btn { width: 100%; text-align: center; }
+}
+@media (max-width: 340px) { .grilla { grid-template-columns: 1fr; } }
+
+/* Ficha de detalle en pantallas pequeñas: una sola columna */
+@media (max-width: 800px) {
+  .detalle-ficha { grid-template-columns: 1fr; gap: 1.6rem; }
+  .detalle-foto { max-width: 380px; }
+}
+@media (max-width: 600px) {
+  .detalle { padding: 1.5rem 5vw 3rem; }
+  .detalle-foto { padding: .7rem; }
+  .detalle-atributos { grid-template-columns: 1fr 1fr; }
+  .detalle-acciones { flex-direction: column; gap: .7rem; }
+  .detalle-acciones .btn { width: 100%; }
+}
